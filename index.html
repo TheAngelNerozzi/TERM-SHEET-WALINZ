@@ -129,9 +129,44 @@
             font-size: 12px;
             color: #666;
         }
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #1a4f8e;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #0d3a6a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .download-btn:active {
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
+    <button class="download-btn" onclick="downloadPDF()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download as PDF
+    </button>
+    
     <div class="watermark"></div>
     
     <div class="container">
@@ -247,5 +282,25 @@
             <div>© 2025 CRAVATH, MORENO & VEGA. ALL RIGHTS RESERVED. UNAUTHORIZED DISTRIBUTION OF THIS DOCUMENT IS PROHIBITED.</div>
         </div>
     </div>
+
+    <script>
+        function downloadPDF() {
+            // Create a blob with the HTML content
+            const htmlContent = document.documentElement.outerHTML;
+            
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = 'data:text/html;charset=utf-8,' + encodeURIComponent(htmlContent);
+            link.download = 'WaLinz_Term_Sheet.pdf';
+            
+            // Trigger the download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Show confirmation
+            alert('PDF download started! Please check your downloads folder.');
+        }
+    </script>
 </body>
 </html>
