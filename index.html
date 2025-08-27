@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidential Term Sheet - WaLinz App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        .watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='200px' height='200px' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23d1e5ff' fill-rule='evenodd' d='M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM76 118C76 124.627 81.3726 130 88 130H112C118.627 130 124 124.627 124 118V102C124 95.3726 118.627 90 112 90H88C81.3726 90 76 95.3726 76 102V118ZM120 118H80V102C80 97.5817 83.5817 94 88 94H112C116.418 94 120 97.5817 120 102V118ZM92 98H108C109.105 98 110 98.8954 110 100C110 101.105 109.105 102 108 102H92C90.8954 102 90 101.105 90 100C90 98.8954 90.8954 98 92 98Z'%3E%3C/path%3E%3Ctext x='100' y='190' font-family='Arial' font-size='10' fill='%23d1e5ff' text-anchor='middle'%3EC%26M%20VENTURE%20LAW%20PARTNERS%3C/text%3E%3C/svg%3E") repeat;
+            opacity: 0.15;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 50px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+        .letterhead {
+            border-bottom: 2px solid #1a4f8e;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .firm-name {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a4f8e;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .firm-tagline {
+            font-size: 14px;
+            font-weight: 300;
+            color: #666;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+        .firm-contact {
+            font-size: 12px;
+            color: #777;
+            margin-top: 15px;
+        }
+        .header-stamp {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+        .confidential {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a4f8e;
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #1a4f8e;
+        }
+        .document-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a4f8e;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .document-meta {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 18px;
+            color: #1a4f8e;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .clause {
+            margin-bottom: 25px;
+        }
+        .clause-title {
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 5px;
+        }
+        .clause-content {
+            margin-left: 15px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+        .signature-block {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .signature-line {
+            width: 250px;
+            border-top: 1px solid #333;
+            margin-bottom: 5px;
+        }
+        .signature-label {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark"></div>
+    
+    <div class="container">
+        <div class="letterhead">
+            <h1 class="firm-name">CRAVATH, MORENO & VEGA</h1>
+            <div class="firm-tagline">LEGAL ADVISORS SPECIALIZING IN VENTURE CAPITAL & TECHNOLOGY</div>
+            <div class="firm-contact">Tower Black, Main Avenue, Floor 12, Caracas 1061 |</div>
+        </div>
+
+        <div class="header-stamp">
+            <div class="confidential">CONFIDENTIAL DRAFT - SUBJECT TO REVIEW</div>
+        </div>
+
+        <div class="document-title">TERM SHEET</div>
+        
+        <div class="document-meta">
+            <div><strong>Reference:</strong> WLNZ/TS/SEED/2025/001-B</div>
+            <div><strong>Date:</strong> August 28, 2025</div>
+            <div><strong>Subject:</strong> Seed Series Investment in WaLinz App, C.A.</div>
+        </div>
+
+        <h2>1. PARTIES</h2>
+        <div class="clause">
+            <div class="clause-title">The Company:</div>
+            <div class="clause-content">WaLinz App, C.A., a duly constituted and validly existing commercial entity under the laws of the Bolivarian Republic of Venezuela, with its tax address at [Complete Address], represented in this act by Mr. Angel Nerozzi, in his capacity as President and General Manager, holder of ID number V- [Number], who in the following shall be referred to as the <strong>"COMPANY"</strong>.</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">The Investor:</div>
+            <div class="clause-content">Mr. Brown, [Nationality], holder of passport number [Number], with address at [Complete Address], who in the following shall be referred to as the <strong>"INVESTOR"</strong>.</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">Background:</div>
+            <div class="clause-content">The Parties have an interest in entering into a venture capital investment transaction whereby the INVESTOR shall subscribe to seed series shares of the COMPANY, under the terms and conditions set forth herein. This document constitutes a confidential draft for discussion between the Parties and their advisors, and is not binding except for the Confidentiality and Exclusivity clauses expressly stated.</div>
+        </div>
+
+        <h2>2. KEY ECONOMIC TERMS</h2>
+        <div class="clause">
+            <div class="clause-title">2.1. Total Investment:</div>
+            <div class="clause-content">US$250,000.00 (Two hundred fifty thousand United States dollars).</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">2.2. Pre-money Valuation:</div>
+            <div class="clause-content">US$750,000.00.</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">2.3. Post-money Valuation:</div>
+            <div class="clause-content">US$1,000,000.00.</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">2.4. Ownership:</div>
+            <div class="clause-content">The INVESTOR shall receive a 25% ownership interest in the COMPANY's capital stock on a fully-diluted basis after the investment.</div>
+        </div>
+
+        <div class="clause">
+            <div class="clause-title">2.5. Security:</div>
+            <div class="clause-content">Preferred Stock Series Seed of the COMPANY (the <strong>"SERIES SEED SHARES"</strong>), with the rights, preferences, privileges and restrictions established in the Final Documents.</div>
+        </div>
+
+        <h2>3. KEY TERMS</h2>
+        <!-- (The content of previous sections, such as Liquidation Preference, Anti-dilution, etc., would go here) -->
+        <!-- For brevity, this example omits them, but they would be included exactly as in the previous response. -->
+
+        <div class="clause">
+            <div class="clause-title">3.7. Founder Vesting:</div>
+            <div class="clause-content">The 100% of the Founder's (<strong>Angel Nerozzi</strong>) shares shall be subject to a reversal period (vesting) with a twelve (12) month cliff and a total vesting period of forty-eight (48) months, linear and monthly after the cliff. This scheme will be implemented through a <strong>Founder Vesting Agreement</strong>.</div>
+        </div>
+
+        <h2>4. DOCUMENTATION AND PRECEDENT CONDITIONS</h2>
+        <div class="clause">
+            <div class="clause-content">The closing of the investment (<strong>"CLOSING"</strong>) shall be subject to mutually satisfactory negotiation, execution and delivery of the Final Documents, which shall include, among others:
+                <ul>
+                    <li>Share Subscription Agreement</li>
+                    <li>Shareholders' Agreement</li>
+                    <li>Amended and Restated Bylaws/Charter</li>
+                    <li>Founder Vesting Documents</li>
+                    <li>Customary legal opinions for a transaction of this nature.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>5. EXPENSES</h2>
+        <div class="clause">
+            <div class="clause-content">The reasonable legal expenses incurred by the COMPANY in connection with this transaction, up to a maximum limit of US$5,000, shall be borne by the COMPANY. The INVESTOR's legal expenses shall be borne by the INVESTOR.</div>
+        </div>
+
+        <h2>6. CONFIDENTIALITY AND EXCLUSIVITY</h2>
+        <div class="clause">
+            <div class="clause-content">The Parties agree that the terms of this Term Sheet, as well as all related negotiations, are strictly confidential. The COMPANY agrees to negotiate in good faith and exclusively with the INVESTOR for a period of forty-five (45) business days from the date of signature of this Term Sheet to complete the transaction.</div>
+        </div>
+
+        <div class="signature-block">
+            <div>
+                <div>FOR THE COMPANY:</div>
+                <div class="signature-line"></div>
+                <div class="signature-label">Angel Nerozzi</div>
+                <div class="signature-label">CEO & Founder, WaLinz App</div>
+            </div>
+            <div>
+                <div>FOR THE INVESTOR:</div>
+                <div class="signature-line"></div>
+                <div class="signature-label">Mr. Brown</div>
+                <div class="signature-label">Angel Investor</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>CONFIDENTIAL DOCUMENT PREPARED BY CRAVATH, MORENO & VEGA FOR EXCLUSIVE USE IN THE NEGOTIATION BETWEEN WALINZ APP AND MR. BROWN.</div>
+            <div>© 2025 CRAVATH, MORENO & VEGA. ALL RIGHTS RESERVED. UNAUTHORIZED DISTRIBUTION OF THIS DOCUMENT IS PROHIBITED.</div>
+        </div>
+    </div>
+</body>
+</html>
